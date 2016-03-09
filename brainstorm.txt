@@ -1,0 +1,16 @@
+following modules must be made:
+
+-make a modules and plugins architecture with well defined interfaces
+
+all of the following as interfaces:
+- decryptor
+- bruteforce decryptor with password list
+- output parser interface (e.g. for reading unrar output) 
+- reporter (which will make objects out of the results)
+- reportConvertor which will transform the output to db, json, flatfile etc.
+- multiExtractor/Tester
+- corruptionTester which will test multi archives for CRC
+- parts missing, shows you exactly which parts are missing from which multi archive
+- fileSystemSnooper which will search the whole filesystem or recurively any given path for archives and
+  stores a lot of file and directory information e.g. total amount of data to be processed (e.g. for progressbar)
+- progressor which will show progress while extracting/testing
